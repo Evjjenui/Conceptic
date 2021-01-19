@@ -1,0 +1,45 @@
+.breadcrumbs {
+  margin: 0 auto 30px;
+  max-width: 1175px;
+  position: relative;
+  z-index: 10;
+
+  .header & {
+    margin-top: 0;
+
+    li {
+
+      a {
+        color: #ffffff;
+        font-size: 14px;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+
+    a {
+      color: #000000;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      color: #999999;
+    }
+  }
+}
+
+.page {
+  padding: 50px 0;
+}

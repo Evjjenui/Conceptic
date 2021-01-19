@@ -1,0 +1,15 @@
+.section_accessorie {
+  padding: 85px 50px;
+
+  .content-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.accessorie {
+
+  &-item {
+    margin: 20px 0;
+  }
+}

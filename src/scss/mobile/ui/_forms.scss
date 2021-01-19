@@ -1,0 +1,55 @@
+.form {
+
+  &-item {
+    margin-bottom: 20px;
+  }
+
+  &-block {
+
+    &__customer-info,
+    &__delievery-info {
+      width: 100%;
+      display: block;
+    }
+
+    .info-block {
+      width: 100%;
+      display: block;
+    }
+    
+    &__delievery-info {
+      margin: 40px 0 0;
+
+      .button {
+        max-width: 100%;
+      }
+      
+      li {
+
+        span {
+          float: right;
+          width: 35%;
+        }
+        
+        b {
+          padding-left: 0;
+        }
+
+        > p {
+          padding-right: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-map {
+    width: 100%;
+  }
+
+  &_sub-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

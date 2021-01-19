@@ -1,0 +1,171 @@
+extends ../_layout
+
+block container
+  .page.profile
+    .content-wrap
+      .breadcrumbs
+        ul
+          li
+            a(href="/dist/index.html") Главная
+          li
+            span /
+          li
+            span Профиль клиента
+      .content-title
+        span Профиль клиента
+      .profile-content
+        form
+          .form-block.form-block__customer-info
+            .form-title
+              span Учетная запись
+            .info-block
+              .form-item
+                input#form-name(type="text" placeholder="Имя")
+                //- label(for="form-name") Имя
+                  sup *
+              .form-item
+                input#form-sername(type="text" placeholder="Фамилия")
+                //- label(for="form-sername") Фамилия
+                  sup *
+              .form-item
+                input#form-nickname(type="text" placeholder="Никнейм")
+                //- label(for="form-nickname") Никнейм
+                  sup *
+              .form-item
+                input#form-email(type="email" placeholder="Еmail")
+                //- label(for="form-email") Еmail
+                  sup *
+
+            .info-block.info-block__password
+              .form_sub-title
+                span Учетная запись
+              .form-item
+                input#form-current-pass(type="text" placeholder="Действующий пароль (не заполняйте, чтобы оставить прежний)")
+                //- label(for="form-current-pass") Действующий пароль (не заполняйте, чтобы оставить прежний)
+              .form-item
+                input#form-new-pass(type="text" placeholder="Новый пароль (не заполняйте, чтобы оставить прежний)")
+                //- label(for="form-new-pass") Новый пароль (не заполняйте, чтобы оставить прежний)
+              .form-item
+                input#form-repeat-pass(type="text" placeholder="Подтвердите новый пароль")
+                //- label(for="form-repeat-pass") Подтвердите новый пароль
+
+            .form-title
+              span Адреса
+            .info-block
+              .form-item
+                input#form-name2(type="text" placeholder="Имя")
+                //- label(for="form-name2") Имя
+                  sup *
+              .form-item
+                input#form-sername2(type="text" placeholder="Фамилия")
+                //- label(for="form-sername2") Фамилия
+                  sup *
+              .form-item
+                input#form-patronymic3(type="text" placeholder="Отчество")
+                //- label(for="form-patronymic3") Отчество
+                  sup *
+              .form-item
+                input#form-phone(type="text" placeholder="Телефон")
+                //- label(for="form-phone") Телефон
+                  sup *
+              .form-item
+                input#form-email2(type="email" placeholder="Еmail")
+                //- label(for="form-email2") Еmail
+                  sup *
+              .form-item
+                input#form-country(type="text" placeholder="Страна")
+                //- label(for="form-country") Страна
+                  sup *
+              .form-item
+                input#form-city(type="text" placeholder="Город")
+                //- label(for="form-city") Город
+                  sup *
+              .form-item
+                input#form-address(type="text" placeholder="Адрес")
+                //- label(for="form-address") Адрес
+                  sup *
+              .form-item
+                button.button.cyan Добавить адрес
+              .form-item
+                button.button.black Сохранить изменения
+        .orders-table
+          .form-title
+            span Мои заказы
+          .orders-table_head.mob-hide
+            .orders-table_row
+              .orders-table_item
+                p Заказ
+              .orders-table_item
+                p Дата
+              .orders-table_item
+                p Статус
+              .orders-table_item
+                p Цена
+              .orders-table_item
+                p Действия
+
+          .orders-table_body
+            .orders-table_row
+              .orders-table_item
+                span.desk-hide Заказ
+                p 
+                  | #675
+              .orders-table_item
+                span.desk-hide Дата
+                p 
+                  | 21.10.2018
+              .orders-table_item
+                span.desk-hide Статус
+                p 
+                  | Завершен
+              .orders-table_item
+                span.desk-hide Цена
+                p 
+                  | 1600 руб.
+              .orders-table_item
+                span.desk-hide Действия
+                p 
+                  a(href="javascript:void(0)") Посмотреть
+            .orders-table_row
+              .orders-table_item
+                span.desk-hide Заказ
+                p 
+                  | #675
+              .orders-table_item
+                span.desk-hide Дата
+                p 
+                  | 21.10.2018
+              .orders-table_item
+                span.desk-hide Статус
+                p 
+                  | Завершен
+              .orders-table_item
+                span.desk-hide Цена
+                p 
+                  | 1600 руб.
+              .orders-table_item
+                span.desk-hide Действия
+                p 
+                  a(href="javascript:void(0)") Посмотреть
+            .orders-table_row
+              .orders-table_item
+                span.desk-hide Заказ
+                p 
+                  | #675
+              .orders-table_item
+                span.desk-hide Дата
+                p 
+                  | 21.10.2018
+              .orders-table_item
+                span.desk-hide Статус
+                p 
+                  | Завершен
+              .orders-table_item
+                span.desk-hide Цена
+                p 
+                  | 1600 руб.
+              .orders-table_item
+                span.desk-hide Действия
+                p 
+                  a(href="javascript:void(0)") Посмотреть
+        a.button.black.quit(href="/dist/index.html") Выйти

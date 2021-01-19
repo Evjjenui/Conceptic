@@ -1,0 +1,59 @@
+.section_hookah {
+  height: auto;
+
+  .content-wrap {
+    display: block;
+    padding: 0;
+    background-image: none;
+    height: auto;
+  }
+
+  .slick-dots {
+    margin-top: 25px;
+
+    button {
+      display: block;
+    }
+  }
+}
+
+.hookah-item {
+  min-width: 1px;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 20px !important;
+  opacity: 1;
+  position: relative !important;
+
+  @include transform(none);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(1),
+  &:nth-child(3) {
+    max-width: 100%;
+  }
+
+  .desk-hide {
+    display: block;
+  }
+
+  .image {
+    height: 210px;
+    margin-bottom: 30px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+}

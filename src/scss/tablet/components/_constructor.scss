@@ -1,0 +1,129 @@
+.section_constructor {
+  padding-bottom: 20px;
+
+  .constructor-addon {
+    margin-bottom: 50px;
+    display: block;
+    width: 100%;
+  }
+}
+
+.equipment-buttons {
+  margin-bottom: 50px;
+}
+
+.constructor {
+
+  &-info {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 0 20px;
+
+    ol {
+      padding-top: 20px;
+      display: none;
+    }
+
+    > span {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 30px;
+      line-height:  1.25em;
+      padding-right: 30px;
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        background: url(../images/icons/select_arrow.png) no-repeat;
+        width: 11px;
+        height: 8px;
+        top: calc(50% - 4px);
+        right: 0;
+      }
+    }
+  }
+
+  &-content {
+    flex-wrap: wrap;
+  }
+}
+
+.equipment-check_list {
+  color: #333333;
+  margin-bottom: 25px;
+
+  * {
+    pointer-events: none;
+  }
+
+  .check_list_button {
+    padding: 5px 0;
+
+    label {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+  }
+
+  &:first-child {
+
+    span {
+
+      &:nth-child(2) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  span {
+    display: block;
+    margin-bottom: 31px;
+  }
+
+  .mb {
+    margin-bottom: 0;
+  }
+
+  .mt {
+    margin-top: 25px;
+  }
+
+  span,
+  label {
+    color: inherit;
+  }
+
+  .color-schema {
+    opacity: .35;
+    margin-top: 5px;
+  }
+
+  &.checked {
+
+    * {
+      pointer-events: auto;
+    }
+    
+    .color-schema {
+      opacity: 1;
+    }
+  }
+}
+
+.equipment {
+  position: relative;
+  width: 100%;
+
+  &-image {
+    right: 8%;
+  }
+
+  > span {
+    margin-bottom: 20px;
+    display: block;
+  }
+}

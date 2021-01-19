@@ -1,0 +1,92 @@
+.section_hookah {
+  height: 1450px;
+  padding: 0;
+
+  .content-wrap {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    background-image: url(../images/hookah_scroll.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 50px 0;
+    max-width: 1275px;
+  }
+}
+
+.hookah {
+
+  &-row {
+
+    &.left {
+      margin-right: auto
+    }
+
+    &.right {
+      margin-left: auto
+    }
+  }
+
+  &-item {
+    text-align: left;
+    max-width: 340px;
+
+    &:nth-child(1) {
+      margin-left: auto;
+      max-width: 260px;
+      margin-top: 50px;
+    }
+
+    &:nth-child(2) {
+      margin-right: auto;
+      margin-top: -70px;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
+      max-width: 260px;
+    }
+
+    &:nth-child(4) {
+      margin-right: auto;
+    }
+
+    h3 {
+      font-size: 48px;
+      line-height: 1.25em;
+      color: #6bc4c8;
+      font-weight: 300;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    span {
+      color: #333333;
+      font-size: 30px;
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1.25em;
+    }
+
+    p {
+      color: #999999;
+    }
+  }
+}
+
+.hookah-item {
+  opacity: 0;
+
+  @include transition(all 1s ease-in-out);
+
+  &.visible {
+    opacity: 1;
+
+    @include transform(none);
+  }
+}
+
+.content-wrap.animate {
+  background-position: center -100px;
+}

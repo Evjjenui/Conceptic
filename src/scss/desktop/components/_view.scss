@@ -1,0 +1,60 @@
+.view {
+
+  &-360 {
+    width: 57%;
+  }
+  
+  &-text {
+    width: 43%;
+    
+    > span {
+      font-size: 36px;
+      line-height: 1.25em;
+      color: #6bc4c8;
+      display: block;
+      margin-bottom: 25px;
+    }
+    
+    > p {
+      font-size: 16px;
+      line-height: 1.5em;
+      color: #999999;
+      margin: 0;
+    }
+
+    .button.black {
+      height: 40px;
+      line-height: 40px;
+      width: 200px;
+      margin: 35px 0 0;
+    }
+  }
+
+  &-reviews {
+    padding-right: 70px;
+    margin-top: 80px;
+
+    .slick-dots {
+      justify-content: flex-start;
+      margin: 0;
+    }
+
+    .slick-arrow {
+      z-index: 110;
+
+      &.slick-prev {
+        left: -30px;
+      }
+    }
+
+    .reviews-item {
+      padding: 0;
+      min-height: 1px;
+      background: none;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

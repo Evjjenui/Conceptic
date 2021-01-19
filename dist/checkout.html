@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" charset="utf-8">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="assets/css/application.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <script src="assets/js/map.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="content-wrap">
+          <div class="menu-btn desk-hide"><span></span><span></span><span></span></div>
+          <div class="logo"><a href="/dist/index.html"><img src="./assets/images/logo.svg" alt="logo"></a></div>
+          <div class="navigation">
+            <ul>
+              <li><a href="/dist/text_page.html">О нас</a></li>
+              <li><a href="/dist/catalogue.html">Каталог</a></li>
+              <li><a href="/dist/text_page.html">Гарантии</a></li>
+              <li><a href="/dist/text_page.html">Доставка и оплата</a></li>
+              <li><a href="/dist/text_page.html">Оптовые закупки</a></li>
+              <li><a href="/dist/text_page.html">Партнеры</a></li>
+              <li><a href="/dist/text_page.html">Контакты</a></li>
+            </ul>
+            <div class="phone desk-hide">
+              <p>+7 (812) 495-49-00</p>
+            </div>
+          </div>
+          <div class="user-holder">
+            <div class="socials mob-hide"><a class="youtube" href="javascript:void(0)"></a><a class="facebook" href="javascript:void(0)"></a><a class="vk" href="javascript:void(0)"></a><a class="insta" href="javascript:void(0)"></a></div><a class="login" href="/dist/profile.html">Войти</a><a class="cart" href="/dist/cart.html"><span class="cart-notify">2</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="page checkout">
+        <div class="content-wrap">
+          <div class="breadcrumbs">
+            <ul>
+              <li><a href="/dist/index.html">Главная</a></li>
+              <li><span>/</span></li>
+              <li><span>Оформление заказа</span></li>
+            </ul>
+          </div>
+          <div class="content-title"><span>Оформление заказа</span></div>
+          <div class="checkout-content">
+            <form>
+              <div class="form-block form-block__customer-info">
+                <div class="form-title"><span>Личные данные</span></div>
+                <div class="info-block">
+                  <div class="form-item">
+                    <input id="form-name" type="text" placeholder="Имя">
+                  </div>
+                  <div class="form-item">
+                    <input id="form-sername" type="text" placeholder="Фамилия">
+                  </div>
+                  <div class="form-item">
+                    <input id="form-patronymic" type="text" placeholder="Отчество">
+                  </div>
+                  <div class="form-item">
+                    <input id="form-phone" type="text" placeholder="Телефон">
+                  </div>
+                  <div class="form-item">
+                    <input id="form-email" type="email" placeholder="Еmail">
+                  </div>
+                  <div class="form-item">
+                    <select>
+                      <option value="">Страна*</option>
+                      <option value="">Страна*</option>
+                      <option value="">Страна*</option>
+                      <option value="">Страна*</option>
+                      <option value="">Страна*</option>
+                      <option value="">Страна*</option>
+                    </select>
+                  </div>
+                  <div class="form-item">
+                    <select>
+                      <option value="">Город*</option>
+                      <option value="">Город*</option>
+                      <option value="">Город*</option>
+                      <option value="">Город*</option>
+                      <option value="">Город*</option>
+                      <option value="">Город*</option>
+                    </select>
+                  </div>
+                  <div class="form-item">
+                    <select>
+                      <option value="">Пункты выдачи заказов</option>
+                      <option value="">Пункты выдачи заказов</option>
+                      <option value="">Пункты выдачи заказов</option>
+                      <option value="">Пункты выдачи заказов</option>
+                      <option value="">Пункты выдачи заказов</option>
+                      <option value="">Пункты выдачи заказов</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-item form-item__agree">
+                  <input id="form-agree" type="checkbox">
+                  <label for="form-agree">Зарегистрировать вас?</label>
+                </div>
+                <div class="form-map"><img src="assets/images/form_map.jpg"></div>
+              </div>
+              <div class="form-block form-block__delievery-info">
+                <div class="form_sub-block">
+                  <div class="form-title"><span>Ваш заказ</span></div>
+                  <ul>
+                    <li> 
+                      <p>Conceptic vase </p><b>1600 руб.</b><i>2шт.</i><span>3200 руб.</span>
+                    </li>
+                    <li> 
+                      <p>Conceptic vase </p><b>1600 руб.</b><i>3шт.</i><span>4800 руб.</span>
+                    </li>
+                  </ul>
+                  <div class="total">
+                    <p>Сумма заказа:</p><span>8000 руб.</span>
+                  </div>
+                </div>
+                <div class="form_sub-block">
+                  <div class="form-title"><span>Доставка</span></div>
+                  <div class="form-item">
+                    <input id="delievery-1" type="radio" name="delievery-radio" checked="checked">
+                    <label for="delievery-1">Самовывоз</label>
+                  </div>
+                  <div class="form-item">
+                    <input id="delievery-2" type="radio" name="delievery-radio">
+                    <label for="delievery-2">Доставка курьером</label>
+                  </div>
+                  <div class="form-item">
+                    <input id="delievery-3" type="radio" name="delievery-radio">
+                    <label for="delievery-3">СДЭК Супер-экспресс</label>
+                  </div>
+                </div>
+                <div class="form_sub-block">
+                  <div class="form-title"><span>Способы оплаты</span></div>
+                  <div class="form-item">
+                    <input id="payment-1" type="radio" name="payment-radio" checked="checked">
+                    <label for="payment-1">Наличные</label>
+                  </div>
+                  <div class="form-item">
+                    <input id="payment-2" type="radio" name="payment-radio">
+                    <label for="payment-2">Карта</label>
+                  </div>
+                  <div class="form-item">
+                    <input id="payment-3" type="radio" name="payment-radio">
+                    <label for="payment-3">Безналичный расчет</label>
+                  </div>
+                </div><a class="button black" href="/dist/thanks.html">подтвердить заказ</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content-wrap">
+        <div class="footer-menu"><span>Меню</span>
+          <ul>
+            <li><a href="/dist/text_page.html">О нас</a></li>
+            <li><a href="/dist/text_page.html">Гарантии</a></li>
+            <li><a href="/dist/text_page.html">Доставка и оплата</a></li>
+            <li class="highlighted"><a href="/dist/text_page.html">Оптовые закупки</a></li>
+            <li><a href="/dist/text_page.html">Партнеры</a></li>
+            <li><a href="/dist/text_page.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts"><span>Контакты</span>
+          <ul>
+            <li>
+              <p>ИП Олейников Станислав Николаевич</p>
+            </li>
+            <li>
+              <p>ИНН 614314864410</p>
+            </li>
+            <li>
+              <p>ОГРНИП 316470400096611</p>
+            </li>
+            <li>
+              <p>concepticdesign@gmail.com</p>
+            </li>
+            <li>
+              <p>whatsapp: +7 (921) 900-90-01</p>
+            </li>
+          </ul>
+          <div class="socials mob-hide"><a class="youtube" href="javascript:void(0)"></a><a class="facebook" href="javascript:void(0)"></a><a class="vk" href="javascript:void(0)"></a><a class="insta" href="javascript:void(0)"></a></div>
+        </div>
+        <div class="footer-address"><span class="mob-hide">Адрес</span>
+          <ul>
+            <li class="mob-hide">
+              <p>Офис Conceptic Design:</p>
+            </li>
+            <li>
+              <p>Адрес: 188691, Ленинградская обл.,</p>
+            </li>
+            <li>
+              <p>Всеволожский р-н, г. Кудрово,</p>
+            </li>
+            <li>
+              <p>ул. Центральная, д. 37.</p>
+            </li>
+            <li>
+              <p>Телефон: +7 (812) 495-49-00</p>
+            </li>
+            <li>
+              <p>Время работы: пн-пт 12:00 - 19:00.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="socials desk-hide"><a class="youtube" href="javascript:void(0)"></a><a class="facebook" href="javascript:void(0)"></a><a class="vk" href="javascript:void(0)"></a><a class="insta" href="javascript:void(0)"></a></div>
+    </div>
+  </body>
+  <script src="vendor/js/jquery-1.11.3.min.js"></script>
+  <script src="vendor/js/jquery-ui.min.js"></script>
+  <script src="vendor/js/jquery.fancybox.min.js"></script>
+  <script src="vendor/js/slick.min.js"></script>
+  <script src="vendor/js/select2.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>

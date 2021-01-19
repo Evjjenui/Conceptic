@@ -1,0 +1,104 @@
+extends ../_layout
+
+block container
+  .page.checkout
+    .content-wrap
+      .breadcrumbs
+        ul
+          li
+            a(href="/dist/index.html") Главная
+          li
+            span /
+          li
+            span Оформление заказа
+      .content-title
+        span Оформление заказа
+      .checkout-content
+        form
+          .form-block.form-block__customer-info
+            .form-title
+              span Личные данные
+            .info-block
+              .form-item
+                input#form-name(type="text" placeholder="Имя")
+                //- label(for="form-name") Имя
+                  sup *
+              .form-item
+                input#form-sername(type="text" placeholder="Фамилия")
+                //- label(for="form-sername") Фамилия
+                  sup *
+              .form-item
+                input#form-patronymic(type="text" placeholder="Отчество")
+                //- label(for="form-patronymic") Отчество
+                  sup *
+              .form-item
+                input#form-phone(type="text" placeholder="Телефон")
+                //- label(for="form-phone") Телефон
+                  sup *
+              .form-item
+                input#form-email(type="email" placeholder="Еmail")
+                //- label(for="form-email") Еmail
+                  sup *
+              .form-item
+                select
+                  -for(i = 0; i < 6; i++)
+                    option(value="") Страна*
+              .form-item
+                select
+                  -for(i = 0; i < 6; i++)
+                    option(value="") Город*
+              .form-item
+                select
+                  -for(i = 0; i < 6; i++)
+                    option(value="") Пункты выдачи заказов
+            .form-item.form-item__agree
+              input#form-agree(type="checkbox")
+              label(for="form-agree") Зарегистрировать вас?
+            .form-map
+              img(src="assets/images/form_map.jpg")
+          .form-block.form-block__delievery-info
+            .form_sub-block
+              .form-title
+                span Ваш заказ
+              ul
+                li 
+                  p Conceptic vase 
+                  b 1600 руб.
+                  i 2шт.
+                  span 3200 руб.
+                li 
+                  p Conceptic vase 
+                  b 1600 руб.
+                  i 3шт.
+                  span 4800 руб.
+              .total
+                p Сумма заказа:
+                span 8000 руб.
+
+            .form_sub-block
+              .form-title
+                span Доставка
+              .form-item
+                input#delievery-1(type="radio" name="delievery-radio" checked="checked")
+                label(for="delievery-1") Самовывоз
+              .form-item
+                input#delievery-2(type="radio" name="delievery-radio")
+                label(for="delievery-2") Доставка курьером
+              .form-item
+                input#delievery-3(type="radio" name="delievery-radio")
+                label(for="delievery-3") СДЭК Супер-экспресс
+            
+            .form_sub-block
+              .form-title
+                span Способы оплаты
+              .form-item
+                input#payment-1(type="radio" name="payment-radio" checked="checked")
+                label(for="payment-1") Наличные
+              .form-item
+                input#payment-2(type="radio" name="payment-radio")
+                label(for="payment-2") Карта
+              .form-item
+                input#payment-3(type="radio" name="payment-radio")
+                label(for="payment-3") Безналичный расчет
+
+            a.button.black(href="/dist/thanks.html") подтвердить заказ

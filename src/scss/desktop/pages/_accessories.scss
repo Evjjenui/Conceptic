@@ -1,0 +1,102 @@
+.accessories {
+
+  &-name {
+    margin-bottom: 20px;
+    
+    span {
+      color: #6bc4c8;
+      font-size: 48px;
+      line-height: 1.25em;
+    }
+  }
+
+  &-slider {
+    width: 490px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 90px;
+  }
+
+  &-info {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 590px);
+  }
+}
+
+.available {
+  color: #6bc4c8;
+  padding-left: 24px;
+  background: url(../images/icons/ok_icon.png) left center no-repeat;
+  margin-top: 30px;
+}
+
+.summary {
+  margin-top: 30px;
+  @include flexbox();
+  align-items: flex-end;
+
+  &-price {
+    min-width: 175px;
+    margin-right: 20px;
+    
+    p {
+      color: #000;
+    }
+
+    span {
+      font-size: 30px;
+      line-height: 1.2em;
+      color: #6bc4c8;
+    }
+  }
+
+  .select2-container {
+    min-width: 70px;
+    max-width: 70px;
+
+    .select2-selection--single {
+      border-color: #6bc4c8;
+    }
+  }
+
+  .button.cyan {
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    margin-left: 15px;
+  }
+}
+
+.image-slides {
+
+  &_item {
+    height: 320px;
+    text-align: center;
+
+    img {
+      max-height: 100%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+
+.prev-slides {
+  margin-top: 35px;
+  position: relative;
+  padding: 0 20px;
+
+
+  &_item {
+    height: 125px;
+    text-align: center;
+    margin: 0 5px;
+
+    img {
+      max-height: 100%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

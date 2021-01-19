@@ -1,0 +1,35 @@
+.section_partners {
+  display: block;
+  padding: 30px 0 20px;
+
+  .content-wrap {
+    display: block;
+  }
+
+  .section-title {
+    text-align: left;
+    padding: 0 20px;
+  }
+}
+
+.partners {
+
+  &-item {
+    margin-bottom: 29px;
+
+    span {
+      font-size: 16px;
+      line-height: 1.5em;
+      color: #333333;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.3em;
+      color: #999999;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="60px" viewBox="0 0 58 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>picture</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="picture" fill="#8AC2C6" fill-rule="nonzero">
+            <path d="M15.3,27.9 C18.8,27.9 21.7,25 21.7,21.5 C21.7,18 18.8,15.1 15.3,15.1 C11.8,15.1 8.9,18 8.9,21.5 C8.9,25 11.8,27.9 15.3,27.9 Z M15.3,17.3 C17.6,17.3 19.4,19.1 19.4,21.4 C19.4,23.7 17.6,25.5 15.3,25.5 C13,25.5 11.2,23.7 11.2,21.4 C11.2,19.2 13,17.3 15.3,17.3 Z" id="Shape"></path>
+            <path d="M0.3,0 L0.3,46.2 L0.3,60 L58,60 L58,46.2 L58,0 L0.3,0 Z M2.6,2.3 L55.7,2.3 L55.7,33.1 L43.8,22.2 C43.6,22 43.3,21.9 43,21.9 C42.7,21.9 42.4,22 42.2,22.3 L30.8,34.7 L25.3,29.2 C24.9,28.8 24.2,28.7 23.7,29.1 L4.4,46.1 L2.5,46.1 L2.5,2.3 L2.6,2.3 Z M55.7,57.7 L2.6,57.7 L2.6,48.5 L55.7,48.5 L55.7,57.7 Z M8,46.2 L24.5,31.6 L36.4,43.5 C36.9,44 37.6,44 38,43.5 C38.4,43 38.5,42.3 38,41.9 L32.5,36.4 L43.1,24.8 L55.7,36.4 L55.7,46.3 L8,46.3 L8,46.2 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,66 @@
+extends ../_layout
+
+block container
+  .page.accessories
+    .content-wrap
+      .breadcrumbs
+        ul
+          li
+            a(href="/dist/index.html") Главная
+          li
+            span /
+          li
+            span Каталог
+      .accessories-content
+        .accessories-name.desk-hide
+          span Шахта
+        .accessories-slider
+          .image-slides
+            .image-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+            .image-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+            .image-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+            .image-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+            .image-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+
+          .prev-slides
+            .prev-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+            .prev-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+            .prev-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+            .prev-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+            .prev-slides_item
+              img(src="assets/images/accessories/aluminium_basic.png", alt="")
+        .accessories-info
+          .accessories-name.mob-hide
+            span Шахта
+          p Шахта из нержавеющей стали AISI304, с внутренним диаметром 13 мм. Основание шахты выполнено из полиацеталя (POM-C),у данного материала высокая стойкость к гидролизу при воздействии горячей воды и пара. Имеет декоративное кольцо, диаметром 70 мм. В основании нет лишних резьбовых соединений, шахта не разборная, трубка запрессована. Общая длинна шахты составляет 65 см. Ни один из используемых материалов в конструкции кальяна не подвергается коррозии!
+          .color-schema
+            - for(i = 0; i < 5; i++)
+              .color-item
+                img(src="assets/images/schemas/schema" + (i + 1) + ".png", alt="schema img")
+            .color-item.active
+              img(src="assets/images/schemas/schema6.png", alt="schema img")
+
+          .available
+            | Есть в наличии
+          .summary
+            .summary-price
+              p Итого:
+              span 7950 руб.
+            select
+              option(value="1") 1
+              option(value="2") 2
+            a.button.cyan(href="/dist/cart.html") в корзину
+
+
+
+  include ../../components/_reviews
+        

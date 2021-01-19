@@ -1,0 +1,39 @@
+.content-wrap {
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+.desk-hide {
+  display: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 421px;
+  overflow: hidden;
+}
+
+.content-title {
+  color: #000;
+  margin-bottom: 40px;
+
+  span {
+    font-size: 48px;
+    line-height: 1.25em;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+}
+
+.button {
+
+  &.cyan {
+    @include button("big", "cyan-border");
+  }
+
+  &.black {
+    @include button("big", "black");
+  }
+}

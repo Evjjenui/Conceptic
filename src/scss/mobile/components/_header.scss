@@ -1,0 +1,100 @@
+.header  {
+  @include flexbox();
+  flex-wrap: wrap;
+  width: 100%;
+  
+  > .content-wrap{
+    padding: 29px 20px;
+    height: 90px;
+  }
+
+  &_big {
+    // min-height: 535px;
+
+    &:after {
+      background-position: 63% bottom;
+    }
+
+    .button {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.menu-btn {
+  display: block;
+  right: 22px;
+  z-index: 120;
+}
+
+.logo {
+  position: relative;
+  z-index: 120;
+}
+
+.user-holder {
+  margin-right: 50px;
+}
+
+.navigation {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  padding-top: 105px;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+
+  @include transition(linear .25s all);
+
+  .opened & {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+  }
+
+  li {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .phone {
+    display: block;
+    color: #6ac2c6;
+    font-size: 24px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+
+    p {
+      display: inline;
+      padding-left: 40px;
+      background: url(../images/icons/phone.png) left center no-repeat;
+    }
+  }
+}
+
+.info-wrap {
+  margin-top: 10px;
+
+  .content-wrap {
+    min-width: 1px;
+  }
+
+  h1,
+  h3 {
+    font-size: 36px;
+    line-height: 1.25em;
+  }
+}

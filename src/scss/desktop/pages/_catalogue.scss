@@ -1,0 +1,102 @@
+.catalogue {
+
+  &-title {
+    margin-bottom: 30px;
+
+    span {
+      font-size: 30px;
+      line-height: 1.25em;
+      color: #000;
+    }
+  }
+
+  &-group {
+    margin-bottom: 60px;
+    // border-top: 1px solid #eeeeee;
+
+    &_item {
+      // border-bottom: 1px solid #eeeeee;
+      padding: 45px 20px 45px 50px;
+
+      &__featured {
+        background-color: #eeeeee;
+      }
+
+       > * {
+        display: inline-block;
+        vertical-align: middle;
+       }
+
+      .image {
+        text-align: center;
+        width: 140px;
+        margin-right: 75px;
+      }
+    }
+  }
+
+  &-description {
+    width: 49%;
+    margin-right: 70px;
+
+    a {
+      color: #000;
+      font-size: 24px;
+      line-height: 1.25em;
+      display: block;
+      margin-bottom: 15px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      color: #999999;
+      line-height: 1.5em;
+      cursor: default;
+    }
+  }
+
+  &-order {
+    width: 200px;
+    text-align: center;
+
+    p {
+      color: #6bc4c8;
+      line-height: 1.5em;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+}
+
+.color {
+
+  &-schema {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  &-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+
+    @include border-radius(50%);
+
+    &:hover,
+    &.active {
+      border-color: #6bc4c8;
+    }
+  }
+}

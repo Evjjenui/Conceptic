@@ -1,0 +1,33 @@
+.content-wrap {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  &__full-width {
+    padding: 0;
+
+    .breadcrumbs,
+    .content-title {
+      padding: 0 20px;
+    }
+  }
+}
+
+.wrapper {
+  padding-bottom: 361px;
+}
+
+.content-title {
+
+  span {
+    font-size: 36px;
+  }
+}
+
+.page {
+  padding-top: 20px;
+}
+
+.tablet-hide {
+  display: none;
+}

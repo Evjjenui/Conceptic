@@ -1,0 +1,19 @@
+.section_instagram {
+  padding-top: 85px;
+
+  .content-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.instagram {
+
+  &-item {
+    
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

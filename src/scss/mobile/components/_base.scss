@@ -1,0 +1,66 @@
+.section {
+  width: 100%;
+  position: relative;
+  padding: 40px 0;
+
+  &-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .button {
+
+    &.cyan {
+      width: 100%;
+
+      &:before {
+        right: 25px;
+      }
+    }
+
+    &.black {
+      width: 100%;
+    }
+  }
+
+  .content-wrap {
+    z-index: 2;
+    position: relative;
+    @include flexbox();
+    align-items: center;
+    height: 100%;
+  }
+
+  .intro-text {
+    max-width: 100%;
+    width: 100%;
+
+    &_right {
+      margin-left: auto;
+    }
+
+    &_left {
+      margin-right: auto;
+    }
+
+    img,
+    svg {
+      width: 95px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.25em;
+      color: #fff;
+    }
+  }
+}
+
+.section_map {
+  display: none;
+}

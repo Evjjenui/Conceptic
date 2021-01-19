@@ -1,0 +1,51 @@
+.image-slides {
+  display: none;
+}
+
+.prev-slides {
+  width: 100%;
+  margin-bottom: 40px;
+
+  &_item {
+    height: 230px;
+  }
+}
+
+.accessories {
+  padding-bottom: 0;
+
+  &-name {
+
+    &.desk-hide {
+      display: block;
+      margin-bottom: 0px;
+    }
+    
+    span {
+      font-size: 30px;
+    }
+  }
+
+  &-slider {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  &-info {
+    width: 100%;
+  }
+}
+
+.summary {
+  flex-wrap: wrap;
+
+  &-price {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .button.cyan {
+    width: 190px;
+  }
+}
+  

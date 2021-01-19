@@ -1,0 +1,11 @@
+.wrapper.error-page {
+
+  &:before {
+    background-size: 1100px;
+    left: calc(50% - 234px);
+  }
+}
+
+.error-text {
+  padding: 330px 0 80px;
+}

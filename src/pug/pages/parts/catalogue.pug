@@ -1,0 +1,78 @@
+extends ../_layout
+
+block container
+  .page.catalogue
+    .content-wrap.content-wrap__full-width
+      .breadcrumbs
+        ul
+          li
+            a(href="/dist/index.html") Главная
+          li
+            span /
+          li
+            span Каталог
+      .content-title
+        span Каталог
+      .catalogue-content
+        .catalogue-title
+          span Кальян
+        .catalogue-group
+          .catalogue-group_item.catalogue-group_item__featured
+            a.image(href="/dist/product.html") 
+              img(src="assets/images/catalogue/hookah.png", alt="")
+            .catalogue-description
+              a(href="/dist/product.html") Conceptic Design
+              p Conceptic Design это: небольшой вес кальяна в полном сборе, надежное O-ring соединение клапана и коннектора шланга, легкий и тактильно приятный мундштук с рукояткой из силикона soft-touch с эффектом антистатик. 
+              .color-schema
+                - for(i = 0; i < 6; i++)
+                  .color-item
+                    img(src="assets/images/schemas/schema" + (i + 1) + ".png", alt="schema img")
+            .catalogue-order
+              p 7000 руб.
+              a.button.black(href="/dist/product.html") Купить
+        .catalogue-title
+          span Колба
+        .catalogue-group
+          .catalogue-group_item
+            a.image(href="/dist/product.html")
+              img(src="assets/images/catalogue/vase.png", alt="")
+            .catalogue-description
+              a(href="/dist/product.html") Conceptic vase
+              p Колба Uneed Craft – вес 1,2 кг., высота 280 мм., диаметр 180/140 мм., внутренний/внешний диаметр горловины 45/70 мм., на дне колбы вставка для подсветки.
+            .catalogue-order
+              p 1600 руб.
+              a.button.black(href="/dist/product.html") Купить
+        .catalogue-title
+          span Мундштуки
+        .catalogue-group
+          .catalogue-group_item
+            a.image(href="/dist/product.html")
+              img(src="assets/images/catalogue/mouthpiece1.png", alt="")
+            .catalogue-description
+              a(href="/dist/product.html") Conceptic mouthpiece
+              p Мундштук изготовлен из пищевой нержавейки, разбирается на две части по 155 мм., ручка из шланга soft-touch с эффектом антистатик, он тактильно приятный по ощущениям, легкий и эргономичный. 
+            .catalogue-order
+              p 1600 руб.
+              a.button.black(href="/dist/product.html") Купить
+          .catalogue-group_item
+            a.image(href="/dist/product.html")
+              img(src="assets/images/catalogue/mouthpiece2.png", alt="")
+            .catalogue-description
+              a(href="/dist/product.html") Conceptic mouthpiece
+              p Мундштук изготовлен из пищевой нержавейки, разбирается на две части по 155 мм., ручка из шланга soft-touch с эффектом антистатик, он тактильно приятный по ощущениям, легкий и эргономичный. 
+            .catalogue-order
+              p 1600 руб.
+              a.button.black(href="/dist/product.html") Купить
+        .catalogue-title
+          span Шланг
+        .catalogue-group
+          .catalogue-group_item
+            a.image(href="/dist/product.html")
+              img(src="assets/images/catalogue/hose.png", alt="")
+            .catalogue-description
+              a(href="/dist/product.html") Conceptic silicon hose
+              p Черная стеклянная колба
+            .catalogue-order
+              p 1600 руб.
+              a.button.black(href="/dist/product.html") Купить
+

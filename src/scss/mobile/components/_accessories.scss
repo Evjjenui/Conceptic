@@ -1,0 +1,28 @@
+.section_accessorie {
+  padding: 40px 0;
+
+  .content-wrap {
+    display: block;
+    padding: 0;
+  }
+
+  .slick-dots {
+    margin-top: 0; 
+  }
+}
+
+.accessorie {
+
+  &-item {
+    text-align: center;
+    margin: 30px 20px;
+
+    .discount {
+      left: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 20px;
+    }
+  }
+}

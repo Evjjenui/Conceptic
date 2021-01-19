@@ -1,0 +1,54 @@
+.orders-table {
+  width: calc(100% + 40px);
+  margin: 0 -20px 45px;
+
+  .form-title {
+    padding: 0 20px;
+  }
+  
+  &_item {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 7px 20px;
+
+    &:first-child,
+    &:last-child {
+      width: 100%;
+    }
+
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    span {
+      width: 60%;
+    }
+
+    p {
+      width: 38.5%;
+    }
+    
+    .desk-hide {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &_row {
+    display: block;
+    padding: 18px 0;
+    
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.profile-content {
+
+  .button {
+    width: 100%;
+  }
+}

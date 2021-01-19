@@ -1,0 +1,82 @@
+.section_reviews {
+
+  .content-wrap {
+    display: block;
+  }
+}
+
+.reviews {
+
+  &-item {
+    @include gradient-vertical(#fafafb, #fff);
+    padding: 30px 40px 20px;
+    min-height: 250px;
+    margin: 0 12px;
+
+    .photo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 81px;
+      height: 81px;
+
+      @include border-radius(50%);
+    }
+
+    .date {
+      color: #999999;
+      font-size: 12px;
+      line-height: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      color: #6bc4c8;
+      font-size: 16px;
+      line-height: 1.5em;
+      font-weight: bold;
+    }
+  }
+
+  &-scroll {
+    margin: 20px 0;
+    height: 80px;
+    max-height: 80px;
+    overflow-y: scroll;
+    word-break: break-word;
+    padding-right: 9px;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+      @include border-radius(30px);
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      @include border-radius(30px);
+      background: rgba(#ccc, .4); 
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      @include border-radius(30px);
+      background: #6bc4c8; 
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #4ca4a8; 
+    }
+
+    p {
+      color: #000;
+    }
+  }
+
+
+  &-info {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    max-width: calc(100% - 90px);
+  }
+}

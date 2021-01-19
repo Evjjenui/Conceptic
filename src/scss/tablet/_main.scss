@@ -1,0 +1,7 @@
+@media (max-width: 1180px) and (min-width: 640px) {
+  @import "layout";
+
+  @import "ui/main";
+  @import "components/main";
+  @import "pages/main";
+}

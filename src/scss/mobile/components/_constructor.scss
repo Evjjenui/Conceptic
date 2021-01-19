@@ -1,0 +1,116 @@
+.section_constructor {
+  padding-bottom: 20px;
+
+  overflow: hidden;
+}
+
+.equipment-buttons {
+  margin-bottom: 50px;
+}
+
+.constructor {
+
+  &-info {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 0 20px;
+
+    .summary-price {
+      margin-right: 0;
+
+      .available {
+        float: right;
+        display: block;
+        line-height: 34px;
+        margin-top: 0;
+      }
+    }
+
+    ol {
+      padding-top: 20px;
+      display: none;
+    }
+
+    > span {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 30px;
+      line-height:  1.25em;
+      padding-right: 30px;
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        background: url(../images/icons/select_arrow.png) no-repeat;
+        width: 11px;
+        height: 8px;
+        top: calc(50% - 4px);
+        right: 0;
+      }
+    }
+  }
+
+  &-content {
+    flex-wrap: wrap;
+  }
+}
+
+.equipment {
+  position: relative;
+  width: 100%;
+
+  .select-block {
+    display: block;
+    margin-bottom: 20px;
+
+    .select2-container {
+      min-width: 170px;
+
+      .select2-selection--single {
+        border-color: #6bc4c8;
+      }
+    }
+  }
+
+  &-image {
+    right: -110px;
+    top: 50px;
+    bottom: auto;
+    z-index: 1;
+
+    svg {
+      height: 440px;
+    }
+  }
+
+  &-check_list {
+
+    &_item {
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 10;
+
+      span {
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 10px 5px 0;
+        background-color: #000;
+      }
+    }
+  }
+
+  > span {
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+.summary {
+
+  .button.cyan {
+    margin-left: auto;
+  }
+}

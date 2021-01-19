@@ -1,0 +1,122 @@
+extends ../_layout
+
+block header
+  .header.header_big
+    .content-wrap
+      .menu-btn.desk-hide
+        span
+        span
+        span
+      .logo
+        a(href="/dist/index.html")
+          img(src="./assets/images/logo.svg", alt="logo")
+      .navigation
+        ul
+          li
+            a(href="/dist/text_page.html") О нас
+          li
+            a(href="/dist/catalogue.html") Каталог
+          li
+            a(href="/dist/text_page.html") Гарантии
+          li
+            a(href="/dist/text_page.html") Доставка и оплата
+          li
+            a(href="/dist/text_page.html") Оптовые закупки
+          li
+            a(href="/dist/text_page.html") Партнеры
+          li
+            a(href="/dist/text_page.html") Контакты
+        .phone.desk-hide
+          p +7 (812) 495-49-00
+      .user-holder
+        .socials.mob-hide
+          a.youtube(href="javascript:void(0)")
+          a.facebook(href="javascript:void(0)")
+          a.vk(href="javascript:void(0)")
+          a.insta(href="javascript:void(0)")
+        
+        a.login(href="/dist/profile.html") Войти
+        a.cart(href="/dist/cart.html")
+          span.cart-notify 2
+    .breadcrumbs.mob-hide
+      ul
+        li
+          a(href="/dist/index.html") Главная
+        li
+          span /
+        li
+          a(href="/dist/catalogue.html") Каталог
+        li
+          span /
+        li
+          span Кальян Conceptic
+    .info-wrap
+      .content-wrap
+        h1 Кальян Conceptic
+        p Дизайнерский кальян в tech стиле. Легкий, надежный, стильный
+        a.button.cyan(href="#hookah-constructor") Выбрать свой
+
+
+block container
+  include ../../components/_view
+  include ../../components/_constructor
+  
+  section.section.section_offers.section_offers__gallery
+    .content-wrap
+      .content-title
+        span Фотогалерея
+      .offers-slider
+        .offers-item
+          a.image(href="#offer-img1" data-fancybox="offers")
+            img(src="assets/images/gallery/1.png", alt="")
+        .offers-item
+          a.image(href="#offer-img2" data-fancybox="offers")
+            img(src="assets/images/gallery/2.png", alt="")
+        .offers-item
+          a.image(href="#offer-img3" data-fancybox="offers")
+            img(src="assets/images/gallery/3.png", alt="")
+        .offers-item
+          a.image(href="#offer-img4" data-fancybox="offers")
+            img(src="assets/images/gallery/4.png", alt="")
+
+      div#offer-img1(style="display: none;")
+        img(src="assets/images/gallery/1.png", alt="")
+      div#offer-img2(style="display: none;")
+        img(src="assets/images/gallery/2.png", alt="")
+      div#offer-img3(style="display: none;")
+        img(src="assets/images/gallery/3.png", alt="")
+      div#offer-img4(style="display: none;")
+        img(src="assets/images/gallery/4.png", alt="")
+    
+  section.section.section_offers
+    .content-wrap
+      .content-title
+        span С этим товаром также покупают
+      .offers-slider
+        .offers-item
+          a.image(href="/dist/product.html")
+            img(src="assets/images/offers/offer1.png", alt="")
+          a(href="/dist/product.html") Conceptic green carbon
+          p 7000 руб.
+          a.button.black(href="/dist/product.html") Подробнее
+        .offers-item
+          .discount 5%
+          a.image(href="/dist/product.html")
+            img(src="assets/images/offers/offer2.png", alt="")
+          a(href="/dist/product.html") Conceptic metal
+          p 7000 руб.
+          a.button.black(href="/dist/product.html") Подробнее
+        .offers-item
+          a.image(href="/dist/product.html")
+            img(src="assets/images/offers/offer3.png", alt="")
+          a(href="/dist/product.html") Conceptic red carbon
+          p 7000 руб.
+          a.button.black(href="/dist/product.html") Подробнее
+        .offers-item
+          .discount 10%
+          a.image(href="/dist/product.html")
+            img(src="assets/images/offers/offer4.png", alt="")
+          a(href="/dist/product.html") Conceptic yellow carbon
+          p 7000 руб.
+          a.button.black(href="/dist/product.html") Подробнее
+    

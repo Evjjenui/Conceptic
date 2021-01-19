@@ -1,0 +1,200 @@
+.section_constructor {
+  background-color: #000;
+
+  .spinner-block {
+
+    input {
+      color: #6bc4c8;
+    }
+  }
+
+  .available {
+    margin-top: 40px;
+  }
+
+  .summary-price {
+
+    p {
+      margin-bottom: 5px;
+      color: #ffffff;
+      font-size: 16px;
+    }
+  }
+
+  .content-wrap {
+    color: #fff;
+    flex-wrap: wrap;
+  }
+
+  .section-title {
+    color: #fff;
+    margin-bottom: 25px;
+  }
+
+  .select2-container--default {
+
+    .select2-selection--single {
+      background-color: transparent;
+
+      .select2-selection__rendered {
+        color: #fff;
+      }
+
+      .select2-selection__arrow b {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.equipment-buttons {
+  margin-bottom: 75px;
+
+  input:checked {
+
+    + label {
+      color: #6bc4c8;
+    }
+  }
+
+  label {
+    color: #999999;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &_item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 55px;
+  }
+}
+
+.constructor-content {
+  width: 100%;
+  @include flexbox();
+}
+
+.equipment-check_list {
+  color: #333333;
+  margin-bottom: 25px;
+
+  * {
+    pointer-events: none;
+  }
+
+  .check_list_button {
+    padding: 5px 0;
+
+    label {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+  }
+
+  &:first-child {
+
+    span {
+
+      &:nth-child(2) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &_item {
+    margin-bottom: 31px;
+
+    p {
+      color: #8c8c8c;
+
+      b {
+        color: #bb0501;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .mb {
+    margin-bottom: 0;
+  }
+
+  .mt {
+    margin-top: 25px;
+  }
+
+  span,
+  label {
+    color: inherit;
+    text-transform: uppercase;
+  }
+
+  .color-schema {
+    opacity: .35;
+    margin-top: 5px;
+
+    &_block {
+      margin-bottom: 20px;
+    }
+  }
+
+  &.checked {
+    color: #68bfc3;
+
+    * {
+      pointer-events: auto;
+    }
+    
+    .color-schema {
+      opacity: 1;
+    }
+  }
+}
+
+.equipment {
+  position: relative;
+  width: 57%;
+
+  &-image {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+  }
+
+  > span {
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+.constructor-info {
+  align-self: flex-end;
+  padding-bottom: 50px;
+  width: 43%;
+
+  ol {
+    list-style-position: inside;
+
+    li {
+      padding: 2px 0;
+    }
+  }
+}
+
+#hookah-stroke {
+  stroke: #333333;
+
+  .checked-color {
+    stroke: red;
+    fill: red;
+  }
+
+  &.active {
+    stroke: #6BC4C8;
+  }
+}

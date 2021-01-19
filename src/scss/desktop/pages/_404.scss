@@ -1,0 +1,30 @@
+.wrapper.error-page {
+  background: #000;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../images/404-bg.png) 0 0 no-repeat;
+    top: 0;
+    left: calc(50% - 260px);
+  }
+
+  .header {
+    background-color: transparent;
+  }
+}
+
+
+.error-text {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1em;
+  color: #fff;
+  padding: 360px 0 150px;
+  position: relative;
+  z-index: 1;
+}

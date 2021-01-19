@@ -1,0 +1,14 @@
+.section_reviews {
+
+  .content-title {
+    text-align: center;
+  }
+}
+
+.reviews {
+
+  &-item {
+    margin: 0;
+    padding: 30px 20px 10px;
+  }
+}

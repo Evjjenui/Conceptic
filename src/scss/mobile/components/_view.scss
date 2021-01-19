@@ -1,0 +1,61 @@
+.section_view {
+
+  .content-wrap {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.view {
+
+  &-360,
+  &-text {
+    width: 100%;
+  }
+  
+  &-360 {
+    padding: 0 20px;
+  }
+  
+  &-text {
+
+    .desk-hide {
+      display: block;
+      margin: 50px 0 30px;
+    }
+    
+    > span {
+      padding: 0 20px;
+      font-size: 30px;
+    }
+    
+    > p {
+      padding: 0 20px;
+    }
+    
+    .button.black {
+      margin: 35px auto 0;
+      display: block;
+      max-width: 200px;
+    }
+  }
+
+  &-reviews {
+    padding-right: 0;
+    margin-top: 0;
+    @include gradient-vertical(#fafafb, #fff);
+
+    .slick-dots {
+      justify-content: center;
+    }
+
+    .reviews-item {
+      padding: 30px 20px 0;
+      min-height: 1px;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

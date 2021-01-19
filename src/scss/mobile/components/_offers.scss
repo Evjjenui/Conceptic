@@ -1,0 +1,26 @@
+.offers {
+
+  &-item {
+    max-width: 100%;
+    margin: 0 10px;
+
+    .discount {
+      left: 0;
+    }
+
+    p,
+    a:not(.button),
+    > * {
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.section {
+
+  &_offers {
+    padding-top: 20px;
+  }
+}

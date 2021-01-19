@@ -1,0 +1,25 @@
+.section_instagram {
+  padding-top: 40px;
+
+  .section-title {
+    text-align: left;
+    padding: 0 20px;
+    font-size: 30px;
+  }
+
+  .content-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.instagram {
+
+  &-item {
+    
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

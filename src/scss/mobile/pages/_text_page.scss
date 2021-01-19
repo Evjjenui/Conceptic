@@ -1,0 +1,67 @@
+.hookah-description {
+  flex-wrap: wrap;
+
+  .image {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 50px;
+  }
+
+  .specifications {
+    order: 2;
+
+    .button.black {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.guarantee-text {
+  background-size: contain;
+  background-position: center 120px;
+  padding-bottom: 50px;
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+.content {
+  
+  &-text {
+  }
+
+  &-downloads,
+  &-info {
+    flex-wrap: wrap;
+    
+    &_item {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &-info {
+    margin: 0;
+    padding: 30px 0;
+
+    &_item {
+      margin: 15px 0;
+    }
+
+    .image {
+      height: auto;
+      margin-bottom: 15px;
+    }
+  }
+
+  &-downloads {
+    padding: 0;
+
+    &_item {
+      margin: 30px 0;
+    }
+  }
+}

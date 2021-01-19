@@ -1,0 +1,24 @@
+.section_video {
+  height: 400px;
+  padding: 0;
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .content-wrap {
+    align-items: flex-end;
+  }
+
+  .section-content {
+    height: 100%;
+  }
+
+  .intro-text {
+    margin-bottom: 35px;
+  }
+
+  .play-button {
+    top: 50px;
+  }
+}

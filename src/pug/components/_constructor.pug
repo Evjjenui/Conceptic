@@ -1,0 +1,111 @@
+section#hookah-constructor.section.section_constructor
+  .content-wrap
+    .section-title
+      | Конструктор
+    .constructor-content
+      .constructor-addon.desk-hide
+        .available
+          | Есть в наличии
+
+        .summary
+          .summary-price
+            p Итого:
+            span 7950 руб.
+          .spinner-block
+            input.spinner(type="text" value="1")
+          a.button.cyan(href="/dist/cart.html") в корзину
+
+      .equipment
+        span.mob-hide Выбор комплектации товара:
+        .equipment-buttons.mob-hide
+          .equipment-buttons_item
+            input#equipment-1(type="radio" name="equipment" checked="checked")
+            label(for="equipment-1") BASIC
+          .equipment-buttons_item
+            input#equipment-2(type="radio" name="equipment")
+            label(for="equipment-2") STANDARD
+          .equipment-buttons_item
+            input#equipment-3(type="radio" name="equipment")
+            label(for="equipment-3") PROFESSIONAL
+        .select-block.desk-hide
+          select
+            option(value="BASIC") BASIC
+            option(value="STANDARD") STANDARD
+            option(value="PROFESSIONAL") PROFESSIONAL
+
+        .equipment-check
+          .equipment-check_list.checked
+            .equipment-check_list_item
+              span Блюдце
+            .equipment-check_list_item
+              span Шахта
+              p выберите цвет — 
+                b Red
+
+            //- .check_list_button.mob-hide
+            //-   input#equipment-check-1(type="radio" name="equipment-check" checked="checked")
+            //-   label(for="equipment-check-1") STEEL (гравировка или лазерная резка)
+            //- .check_list_button.mob-hide
+            //-   input#equipment-check-2(type="radio" name="equipment-check")
+            //-   label(for="equipment-check-2") CARBON (black, green, red, blue, gold). 
+            //- .check_list_button.mob-hide
+            //-   input#equipment-check-3(type="radio" name="equipment-check")
+            //-   label(for="equipment-check-3") PLEXIGLASS (new, coming soon).
+
+            .color-schema
+              .color-schema_block
+                - for(i = 0; i < 3; i++)
+                  .color-item
+                    img(src="assets/images/schemas/schema" + (i + 1) + ".png", alt="schema img")
+              .color-schema_block
+                .color-item
+                  img(src="assets/images/schemas/schema4.png", alt="schema img")
+                .color-item
+                  img(src="assets/images/schemas/schema2.png", alt="schema img")
+                .color-item.active
+                  img(src="assets/images/schemas/schema5.png", alt="schema img")
+            .equipment-check_list_item.mt
+              span Диффузор
+          
+          .equipment-check_list
+            .equipment-check_list_item
+              span Мундштук
+            .equipment-check_list_item
+              span Силиконовый шланг
+            .equipment-check_list_item.mb
+              span Колба
+            .color-schema
+              .color-schema_block
+                - for(i = 0; i < 2; i++)
+                  .color-item
+                    img(src="assets/images/schemas/schema" + (i + 1) + ".png", alt="schema img")
+        
+        .equipment-image
+          include ./_hookah_image
+
+      .constructor-info
+        .specifications
+          span.desk-hide Характеристики кальяна
+          ol
+            li Шахта AISI304, D13 мм.
+            li Блюдце D200 мм.
+            li Мундштук AISI304, D10 мм с рукояткой из силикона, длина 300 мм.
+            li Шланг soft-touch с эффектом антистатик 11/15 мм., длина 1,5 м.
+            li O-ring соединение клапана и коннектора шланга.
+            li Набор уплотнителей (шахта-колба, шахта-чашка).
+            li Съемный диффуор 12 мм.
+            li Вес шахты 850 гр.
+            li Высота в сборе 650 мм. (на колбе 700 мм.)
+
+        .available.tablet-hide.mob-hide
+          | Есть в наличии
+
+        .summary.tablet-hide
+          .summary-price
+            p.mob-hide Итого:
+            span 7950 руб.
+            .available.desk-hide
+              | В наличии
+          .spinner-block
+            input.spinner(type="text")
+          a.button.cyan(href="/dist/cart.html") в корзину

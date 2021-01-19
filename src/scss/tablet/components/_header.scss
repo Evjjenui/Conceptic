@@ -1,0 +1,57 @@
+.navigation {
+  position: fixed;
+  height: 50px;
+  padding: 15px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+
+  @include transform(translate3d(0, 100px, 0));
+  @include transition(linear .25s opacity);
+
+  @include flexbox();
+  align-item: center;
+  justify-content: center;
+}
+
+.menu-btn {
+  display: block;
+  right: 20px;
+}
+
+.header {
+  
+  > .content-wrap{
+    padding: 35px 20px;
+  }
+  
+  .socials,
+  .user-holder {
+    margin-left: 0;
+  }
+
+  .user-holder {
+    margin-right: 50px;
+  }
+
+  &_big {
+
+    &:after {
+      background-position: 56% bottom;
+    }
+  }
+}
+
+.opened {
+  
+  .navigation {
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+  }
+}

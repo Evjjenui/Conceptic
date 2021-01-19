@@ -1,0 +1,64 @@
+@mixin button($button-size, $button-bg) {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  clear: both;
+  outline: none;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: normal;
+
+  @include transition(.25s all ease-in);
+
+  @if $button-size == "big" {
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  @if $button-size == "medium" {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  @if $button-size == "small" {
+    font-size: 13px;
+    height: 44px;
+    line-height: 40px;
+  }
+
+  // button bg
+
+  @if $button-bg == "black" {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+
+  @if $button-bg == "cyan-border" {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #6bc4c8;
+    color: #6bc4c8;
+
+    &:hover,
+    &:active {
+
+      &:before {
+        right: 20px;
+      }
+    }
+  }
+}

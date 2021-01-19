@@ -1,0 +1,83 @@
+extends ../_layout
+
+block container
+  .page.cart
+    .content-wrap
+      .breadcrumbs
+        ul
+          li
+            a(href="/dist/index.html") Главная
+          li
+            span /
+          li
+            span Корзина
+      .cart-content
+        .cart-table
+          .cart-table_head.mob-hide
+            .cart-row
+              .cart-column.cart-column__image
+              .cart-column.cart-column_pack
+                .cart-column.cart-column__name
+                  p Товар
+                .cart-column.cart-column__price
+                  p Цена
+                .cart-column.cart-column__quantity
+                  p Количество
+                .cart-column.cart-column__sum
+                  p Итого
+                .cart-column.cart-column__remove
+          .cart-table_body
+            .cart-row
+              .cart-column.cart-column__image
+                img(src="assets/images/accessories/cart-1.jpg", alt="")
+              .cart-column.cart-column_pack
+                .cart-column.cart-column__name
+                  p Conceptic vase
+                .cart-column.cart-column__price
+                  span.desk-hide Цена
+                  p 1600 руб.
+                .cart-column.cart-column__quantity
+                  span.desk-hide Количество
+                  .spinner-block
+                    input.spinner(type="text")
+                .cart-column.cart-column__sum
+                  span.desk-hide Итого
+                  p 3200 руб.
+                .cart-column.cart-column__remove
+                  .del-btn
+            .cart-row
+              .cart-column.cart-column__image
+                img(src="assets/images/accessories/cart-2.jpg", alt="")
+              .cart-column.cart-column_pack
+                .cart-column.cart-column__name
+                  p Кальян Conceptic
+                  span Шахта, Блюдце, Диффузор, Мундштук, Силиконовый шланг
+                .cart-column.cart-column__price
+                  span.desk-hide Цена
+                  p 7000 руб.
+                .cart-column.cart-column__quantity
+                  span.desk-hide Количество
+                  .spinner-block
+                    input.spinner(type="text")
+                .cart-column.cart-column__sum
+                  span.desk-hide Итого
+                  p 7000 руб.
+                .cart-column.cart-column__remove
+                  .del-btn
+            .cart-row.cart-row__sum
+              .cart-column.cart-column__image
+              .cart-column.cart-column_pack
+                .cart-column.cart-column__name
+                .cart-column.cart-column__price
+                .cart-column.cart-column__quantity
+                .cart-column.cart-column__sum
+                  p 10200 руб.
+                .cart-column.cart-column__remove
+        .cart-controls
+          .coupon-show.desk-hide У меня есть промокод
+          .cart-controls_coupon
+            input(type="text" placeholder="Купон")
+            button.button.cyan Применить
+          .cart-controls_buttons
+            button.button.cyan обновить
+            a.button.black(href="/dist/checkout.html") оформить

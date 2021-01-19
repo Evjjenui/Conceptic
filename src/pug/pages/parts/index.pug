@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  include ../../base/_head
+  body
+    
+    block wrapper
+      .wrapper
+        block header
+          include ../../base/_header_big
+          
+
+        block container
+          include ../../components/_video
+          include ../../components/_design_intro
+          include ../../components/_future_intro
+
+          include ../../components/_hookah
+          include ../../components/_interior_intro
+          include ../../components/_accessories
+          
+          include ../../components/_quality_intro
+          include ../../components/_instagram
+          include ../../components/_partners
+          section#map.section.section_map(style="height: 600px;")
+
+      block footer
+        include ../../base/_footer
+
+  script(src="vendor/js/jquery-1.11.3.min.js")
+  script(src="vendor/js/slick.min.js")
+  script(src="vendor/js/jquery-ui.min.js")
+  script(src="vendor/js/jquery.fancybox.min.js")
+  script(src="vendor/js/select2.min.js")
+  script(src="vendor/js/ScrollMagic.min.js")
+  script(src="vendor/js/TweenMax.min.js")
+  script(src="vendor/js/animation.gsap.js")
+  script(src="assets/js/parallax.js")
+  script(src="assets/js/main.js")
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuPa8EZEfgZtLyZczSgbi_XlIs0F5cn14&callback=initMap" async defer, type="text/javascript")

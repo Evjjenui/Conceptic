@@ -1,0 +1,33 @@
+.offers {
+
+  &-item {
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.section {
+
+  &_offers {
+    padding-top: 20px;
+
+    &.section_offers__gallery {
+
+      .offers-item {
+
+        &:last-child {
+          display: inline-flex;
+        }
+      }
+    }
+
+    .content-title {
+
+      span {
+        font-size: 36px;
+      }
+    }
+  }
+}

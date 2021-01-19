@@ -1,0 +1,135 @@
+.cart {
+
+  &-controls {
+    @include flexbox();
+    padding-right: 55px;
+
+    .button {
+      width: 200px;
+      margin: 0 4px;
+
+      &.cyan {
+        @include button("medium", "cyan-border");
+      }
+
+      &.black {
+        @include button("medium", "black");
+      }
+    }
+
+    input {
+      width: 200px;
+      margin-right: 4px;
+    }
+    
+    &_coupon {
+      margin-right: auto;
+    }
+
+    &_buttons {
+      margin-left: auto;
+    }
+  }
+
+  &-table {
+    
+    &_head {
+
+      .cart-row {
+        padding-top: 0;
+        padding-bottom: 10px;
+      }
+
+      p {
+        color: #000;
+        font-size: 14px;
+        line-height: 2em;
+      }
+    }
+
+    &_body {
+
+      p {
+        font-size: 24px;
+        line-height: 1.25em;
+        color: #000;
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      .cart-column {
+
+        &__price,
+        &__sum {
+
+          p {
+            color: #6bc4c8;
+          }
+        }
+      }
+    }
+  }
+
+  &-row {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #eeeeee;
+
+    @include flexbox();
+    align-items: center;
+
+    &__sum {
+      border: none;
+      padding: 30px 50px;
+    }
+  }
+
+  &-column {
+    text-align: left;
+
+    &_pack {
+      width: 87%;
+      @include flexbox();
+    }
+
+    &__image {
+      width: 13%;
+    }
+
+    &__name {
+      width: 45%;
+      padding-right: 10px;
+    }
+
+    &__price {
+      width: 22%;
+    }
+
+    &__quantity {
+      width: 15%;
+    }
+
+    &__sum {
+      width: 24%;
+    }
+
+    &__remove {
+      width: 3%;
+    }
+  }
+
+  .select2-container {
+    min-width: 71px;
+    max-width: 71px;
+  }
+}
+
+.del-btn {
+  width: 16px;
+  height: 16px;
+  background: url(../images/icons/delete-icon.png) center no-repeat;
+  background-size: 16px;
+  cursor: pointer;
+}

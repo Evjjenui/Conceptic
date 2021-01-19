@@ -1,0 +1,139 @@
+.hookah-description {
+  @include flexbox();
+  align-items: center;
+
+  .image {
+    margin-left: auto;
+  }
+
+  .button.black {
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+  }
+
+  ol {
+    margin: 15px 0 20px;
+
+    li {
+      padding: 3px 0;
+    }
+  }
+}
+
+.guarantee-text {
+  padding: 70px 0 80px;
+  background: url(../images/guarantee-bg.png) center 90px no-repeat;
+
+  h2 {
+    font-size: 48px;
+    line-height: 1.25em;
+    margin-bottom: 15px;
+  }
+}
+
+.content {
+  
+  &-text {
+    color: #000;
+
+    ol,
+    ul {
+      list-style-position: inside;
+
+      p {
+        display: inline;
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
+      list-style: none;
+      
+      li {
+        padding-left: 17px;
+        position: relative;
+        padding: 11px 0 11px 17px;
+
+        &:before {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 6px;
+          height: 6px;
+          left: 0;
+          top: 19px;
+          background-color: #000;
+
+          @include border-radius(50%);
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-info {
+    @include flexbox();
+    justify-content: space-between;
+    margin: 35px 0 80px;
+
+    &_item {
+      max-width: 310px;
+
+      .image {
+        width: 50px;
+        height: 63px;
+        margin-bottom: 22px;
+      }
+
+      span {
+        font-size: 30px;
+        line-height: 1em;
+        margin-bottom: 24px;
+        display: block;
+      }
+
+      p {
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  &-downloads {
+    padding: 50px 0;
+    @include flexbox();
+    justify-content: space-between;
+
+    &_item {
+      width: 310px;
+      line-height: 1.5em;
+      text-align: center;
+
+      .image {
+        height: 64px;
+        display: inline-block;
+        vertical-align: top;
+        width: auto;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: #6bc4c8;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 15px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

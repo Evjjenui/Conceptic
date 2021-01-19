@@ -1,0 +1,7 @@
+@media screen and (max-width: 639px) {
+  @import "layout";
+  
+  @import "ui/main";
+  @import "components/main";
+  @import "pages/main";
+}
